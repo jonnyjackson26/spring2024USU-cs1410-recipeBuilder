@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+#titleField {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    height:30px;
+    width:80%;
+}
+
+input {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin:0;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: black;
+    padding: 10px;
+    width:100%;
+}
+
+.inputButtonContainer {
+    height:50px;
+    display:flex;
+    margin-bottom: 10px;
+    margin-top:10px;
+    width:80%;
+}
+
+.addButton {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin:0;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    cursor:pointer;
+}
+
+.box {
+    width:80%;
+    height:200px;
+    border:1px dotted white;
+    border-radius:15px;
+    background-color: var(--bgc);
+}
+#instructionBox {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.ingredientItem {
+    border-radius:10px;
+    padding:9px;
+    background-color: var(--secondary-color);
+    color:black;
+    border: 1px solid var(--primary-color);
+    margin:5px;
+    cursor:pointer;
+}
+.instructionItem {
+    border-radius:15px;
+    width:95%;
+    padding:6px;
+    color:white;
+    border:1px dotted white;
+    background-color: var(--bgc);
+    margin:5px;
+    cursor:pointer;
+}
+.ingredientItem:focus, .instructionItem:focus, .ingredientItem:hover, .instructionItem:hover {
+    color:black;
+    background-color: gray;
+}
+
+#buttonsDiv {
+    display:flex;
+}
+
+#resetButton {
+    border-radius:15px;
+    padding:15px;
+    color:darkslategray;
+    background-color: white;
+    margin:10px;
+    cursor:pointer;
+}
+#saveRecipeCardButton {
+    border-radius:15px;
+    padding:15px;
+    color:white;
+    background-color: aqua;
+    margin:10px;
+    cursor:pointer;
+}
+
+
+
+

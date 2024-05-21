@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldrecipeace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="writeRecipeToFile-1.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>World Recipeace Recipe Builder</h1>
+
+        <input type="text" id="titleField" placeholder="Enter Recipe Title" aria-label="Recipe Title" aria-roledescription="Enter the title of your recipe">
+
+        <div class="inputButtonContainer">
+            <input type="text" id="ingredientField" placeholder="Enter an ingredient" aria-label="Ingredient bar" aria-roledescription="Enter ingredient here then press enter"><button class="addButton" id="addIngredientButton">Add</button>
+        </div>
+        <div class="box" id="ingredientBox" aria-live="polite" id="ingredientBox"></div>
+        <div class="inputButtonContainer">
+            <input type="text" id="instructionField" placeholder="Enter an instruction" aria-label="Instruction bar" aria-roledescription="Enter instruction here then press enter"><button class="addButton" id="addInstructionButton">Add</button>
+        </div>
+        <div class="box" id="instructionBox" aria-live="polite" id="instructionBox"></div>
+        <div id="buttonsDiv">
+            <button id="resetButton">Reset</button>
+            <button id="saveRecipeCardButton">Save recipe Card</button>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+<!--
+    TODO:
+    fix spacing and styling 
+    make the height of the box divs dynamic
+-->
